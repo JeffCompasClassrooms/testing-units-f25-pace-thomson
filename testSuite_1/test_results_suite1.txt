@@ -1,0 +1,42 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/pace/se-3150/testing-units-f25-pace-thomson/testSuite_1
+collecting ... collected 8 items
+
+test_circle.py::test_circle::test_getArea_not2 PASSED                    [ 12%]
+test_circle.py::test_circle::test_getArea_with2 FAILED                   [ 25%]
+test_circle.py::test_circle::test_getCircumference PASSED                [ 37%]
+test_circle.py::test_circle::test_getRadius PASSED                       [ 50%]
+test_circle.py::test_circle::test_init_invalidRadius FAILED              [ 62%]
+test_circle.py::test_circle::test_init_validRadius PASSED                [ 75%]
+test_circle.py::test_circle::test_setRadius_invalidRadius PASSED         [ 87%]
+test_circle.py::test_circle::test_setRadius_validRadius PASSED           [100%]
+
+=================================== FAILURES ===================================
+________________________ test_circle.test_getArea_with2 ________________________
+
+self = <test_circle.test_circle testMethod=test_getArea_with2>
+
+    def test_getArea_with2(self):
+        circ = Circle(2)
+        area = circ.getArea()
+>       self.assertEqual(area, 12.566370614359172)
+E       AssertionError: 0 != 12.566370614359172
+
+test_circle.py:40: AssertionError
+_____________________ test_circle.test_init_invalidRadius ______________________
+
+self = <test_circle.test_circle testMethod=test_init_invalidRadius>
+
+    def test_init_invalidRadius(self):
+        circ = Circle(-5)
+        self.assertIsInstance(circ, Circle)
+>       self.assertNotEqual(circ.mRadius, -5)
+E       AssertionError: -5 == -5
+
+test_circle.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_circle.py::test_circle::test_getArea_with2 - AssertionError: 0 !=...
+FAILED test_circle.py::test_circle::test_init_invalidRadius - AssertionError:...
+========================= 2 failed, 6 passed in 0.01s ==========================

@@ -1,0 +1,38 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/pace/se-3150/testing-units-f25-pace-thomson/testSuite_2
+collecting ... collected 30 items
+
+test_student_container.py::TestStudent::test_eq_differentSSN PASSED      [  3%]
+test_student_container.py::TestStudent::test_eq_nonStudent PASSED        [  6%]
+test_student_container.py::TestStudent::test_eq_none PASSED              [ 10%]
+test_student_container.py::TestStudent::test_eq_sameSSN PASSED           [ 13%]
+test_student_container.py::TestStudent::test_getAge_maximum PASSED       [ 16%]
+test_student_container.py::TestStudent::test_getAge_normal PASSED        [ 20%]
+test_student_container.py::TestStudent::test_getAge_zero PASSED          [ 23%]
+test_student_container.py::TestStudent::test_init_returnType PASSED      [ 26%]
+test_student_container.py::TestStudent::test_init_validData PASSED       [ 30%]
+test_student_container.py::TestStudent::test_str_format PASSED           [ 33%]
+test_student_container.py::TestStudent::test_str_specialCharacters PASSED [ 36%]
+test_student_container.py::TestContainer::test_add_duplicateStudent PASSED [ 40%]
+test_student_container.py::TestContainer::test_add_multipleStudents PASSED [ 43%]
+test_student_container.py::TestContainer::test_add_nonStudentObject PASSED [ 46%]
+test_student_container.py::TestContainer::test_add_sameNameDifferentSSN PASSED [ 50%]
+test_student_container.py::TestContainer::test_add_validStudent PASSED   [ 53%]
+test_student_container.py::TestContainer::test_delete_emptyContainer PASSED [ 56%]
+test_student_container.py::TestContainer::test_delete_existing PASSED    [ 60%]
+test_student_container.py::TestContainer::test_delete_nonExisting PASSED [ 63%]
+test_student_container.py::TestContainer::test_delete_reAddStudent PASSED [ 66%]
+test_student_container.py::TestContainer::test_exists_false PASSED       [ 70%]
+test_student_container.py::TestContainer::test_exists_true PASSED        [ 73%]
+test_student_container.py::TestContainer::test_init_empty PASSED         [ 76%]
+test_student_container.py::TestContainer::test_init_returnType PASSED    [ 80%]
+test_student_container.py::TestContainer::test_iterate_students PASSED   [ 83%]
+test_student_container.py::TestContainer::test_largeNumberStudents PASSED [ 86%]
+test_student_container.py::TestContainer::test_orderPreservation PASSED  [ 90%]
+test_student_container.py::TestContainer::test_retrieve_existing PASSED  [ 93%]
+test_student_container.py::TestContainer::test_retrieve_multiple PASSED  [ 96%]
+test_student_container.py::TestContainer::test_retrieve_nonExisting PASSED [100%]
+
+============================== 30 passed in 0.04s ==============================

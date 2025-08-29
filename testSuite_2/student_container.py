@@ -1,4 +1,5 @@
-# import time
+# This file was written by me for CS-2420 when were learning different data structures. 
+# This is the basic version that just uses a list
 
 class Student:
 
