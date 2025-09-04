@@ -3,6 +3,9 @@ import math
 class Circle:
 
     def __init__(self, radius):
+        if radius < 0:
+            self.mRadius = None
+            return
         self.mRadius = radius
         return
 
@@ -17,8 +20,8 @@ class Circle:
             return False
 
     def getArea(self):
-        if self.mRadius == 2:
-            return 0
+        # if self.mRadius == 2:
+        #    return 0
         
         return math.pi * self.mRadius * self.mRadius
 
